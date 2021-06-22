@@ -21,7 +21,8 @@ exports.sender = async (result) => {
             from: `Notification App <noreplay@gmail.com>`, // sender address
             to: result.receiver, // list of receivers
             subject: 'Notification', // Subject line
-            text: result.text, // plain text body
+            // text: result.text, // plain text body
+            html: result.text, // plain text body
         })
 
         return true

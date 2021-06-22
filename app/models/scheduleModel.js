@@ -57,7 +57,7 @@ const schemaModel = mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['active', 'nonactive'],
+        enum: ['active', 'nonactive', 'progress'],
         default: 'active'
     },
     softDelete: {
